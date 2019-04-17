@@ -1,12 +1,4 @@
-﻿
-# Internal table to html
-
-Class that converts the internal table into the html table.
-
-Basic usage example:
-
-```ABAP
-report z_itab_to_html.
+﻿report z_itab_to_html.
 
 types:
   "RESTRICTION:
@@ -38,4 +30,3 @@ data(io_converter) = new zcl_itab_to_html(
 "Converting internal table to html
 data(i_table) = io_converter->convert( it_itab ).
 cl_demo_output=>display_html( i_table ).
-```
